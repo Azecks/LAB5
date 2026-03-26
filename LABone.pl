@@ -25,11 +25,9 @@ sum_of_divisors(N, Sum) :-
 % Точка входа
 main :-
     write('Enter a natural number: '),
-    flush_output,
     read(N),
     sum_of_divisors(N, Sum),
     write('Sum of divisors = '),
-    write(Sum),
-    nl.
+    write(Sum).
 
 :- initialization(main).
