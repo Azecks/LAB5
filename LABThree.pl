@@ -24,7 +24,7 @@ merge_sort([H], [H]).
 
 % Точка входа
 main :-
-    write('Enter a list (>=2 elements please): '),
+    write('Enter a list (>=2 elements): '),
     read(List),
     merge_sort(List, Sorted),
     write('Sorted list: '),
