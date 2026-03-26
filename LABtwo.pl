@@ -15,11 +15,9 @@ sign_of_sum(List, Sign) :-
 % Точка входа
 main :-
     write('Enter a list of integers: '),
-    flush_output,
     read(List),
     sign_of_sum(List, Sign),
     write('Sign = '),
-    write(Sign),
-    nl.
+    write(Sign).
 
 :- initialization(main).
